@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'cd $HOME'
+                sh 'pwd'
                 sh 'ls -al'
             }
         }
